@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d1a2d;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+/* parent of card */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 7rem;
+}
+
+.card {
+    position: relative;
+    width: 19rem;
+    background-color: #14253d;
+    border-radius: 15px;
+}
+
+
+/* equilibrium image */
+
+.imgs {
+    position: relative;
+    width: 86%;
+    margin: 1.3rem;
+    padding: 0;
+}
+
+.imgs div {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgs div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in;
+}
+
+.hover-img {
+    width: 100%;
+    height: 100%;
+    background: none no-repeat center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+}
+
+
+/* hover effect */
+
+.imgs>div:hover img {
+    transform: scale(1.2);
+}
+
+.hover-img:hover {
+    background: #f1266c url("../images/icon-view.svg") no-repeat center;
+    cursor: pointer;
+}
+
+
+/* description  */
+
+.description {
+    padding: 0 1.3rem;
+}
+
+.description>h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.description>h1:hover {
+    color: #f1266c;
+    cursor: pointer;
+}
+
+.description>p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #667d9c;
+    width: 300;
+    margin: 0.5rem 0 0;
+}
+
+
+/*icons*/
+
+.icons {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1rem 0 0.5rem;
+}
+
+.icons div:nth-of-type(1) {
+    align-items: center;
+    margin: 0 0.4rem 0 0;
+}
+
+.icons div:nth-of-type(2) {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #00fff7;
+    margin: 0 1rem 0 0;
+}
+
+.icons div:nth-of-type(3) {
+    margin: 0 0 0 3.5rem;
+}
+
+.icons div:nth-of-type(4) {
+    font-size: 1rem;
+    color: #667d9c;
+    margin: 0 0 0 0.5rem;
+}
+
+hr {
+    border-width: 1px 0 0 0;
+    border-color: #667d9c;
+    margin: 0 1.3rem;
+}
+
+
+/* avatar */
+
+.avatar {
+    margin: 1rem 1.3rem 1.5rem;
+    display: flex;
+    height: 35px;
+}
+
+.avatar div:nth-of-type(1) {
+    flex-basis: 35px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.avatar div:nth-of-type(2):not(a) {
+    font-size: 1rem;
+    color: #667d9c;
+    width: 300;
+    margin: 0 1rem 0;
+    padding: 0.5rem 0;
+}
+
+.avatar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.avatar a:hover {
+    color: #f1266c;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution {
+    color: #ffffff;
+}
+
+.attribution a {
+    color: #f1266c;
+    text-decoration: none;
+}
+
